@@ -103,9 +103,9 @@ class PostType {
   /**
   * Textdomain used for translation. Use the set_textdomain() method to set a custom textdomain.
   *
-  * @var string $textdomain Used for internationalising. Defaults to "cpt" without quotes.
+  * @var string $textdomain Used for internationalising. Defaults to "post-type" without quotes.
   */
-  public $textdomain = 'cpt';
+  public $textdomain = 'post-type';
 
   /**
   * Constructor
@@ -839,7 +839,7 @@ class PostType {
   *
   * @param string $textdomain Textdomain used for translation.
   */
-  private function set_textdomain($textdomain) {
+  public function set_textdomain($textdomain) {
     $this->textdomain = $textdomain;
   }
 
